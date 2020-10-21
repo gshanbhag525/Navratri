@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Live Navratri</title>
+
+    <link
+      href="https://unpkg.com/video.js/dist/video-js.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1><span>Live Telecast of Shri Navadurga Temple, Madkai, Goa</span></h1>
+      <h4>Live Darshan Timing 1.00 PM - 1.30 PM (Variable)</h4>
+      <h4>Note: Stream will be available only if temple cameras are Enabled with Internet Connectivity.</h4>
+      <video
+        id="my_video_1"
+        class="video-js vjs-fluid vjs-default-skin"
+        controls
+        preload="auto"
+        data-setup="{}"
+      >
+        <source
+          src="https://live.rixcast.com:19360/navadurgamadkai/navadurgamadkai.m3u8"
+          type="application/x-mpegURL"
+        />
+      </video>
+    </section>
+
+    <script>
+      var player = videojs("my_video_1");
+      player.play();
+    </script>
+  </body>
+</html>

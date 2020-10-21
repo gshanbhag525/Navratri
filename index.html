@@ -1,36 +1,91 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Live Navratri</title>
+	<head>
+		<title>Navratri</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <link
-      href="https://unpkg.com/video.js/dist/video-js.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/video.js/dist/video.js"></script>
-    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
-  </head>
-  <body>
-    <section>
-      <h1><span>Live Telecast of Shantadurga Temple, Kavlem, Goa</span></h1>
-      <video
-        id="my_video_1"
-        class="video-js vjs-fluid vjs-default-skin"
-        controls
-        preload="auto"
-        data-setup="{}"
-      >
-        <source
-          src="https://live.rixcast.com:19360/shantadurgak/shantadurgak.m3u8"
-          type="application/x-mpegURL"
-        />
-      </video>
-    </section>
+		<!-- Header -->
+			<div id="header">
 
-    <script>
-      var player = videojs("my_video_1");
-      player.play();
-    </script>
-  </body>
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/m.jpeg" alt="" /></span>
+							<h1 id="title">Navratri Live</h1>
+							<p>From most of the Goan Temples</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Live Navratri Telecast -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Live Navratri Telecast</h2>
+							</header>
+
+							<p>Live Navratri Telecast from Major Goan Temples.
+								Devotees will be able to watch Makhar as well as Devi Darshan</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="live/shantadurga.html" class="image fit" target="_blank"><img src="images/s.jpg" alt="Shri Shantadurga" /></a>
+										<header>
+											<h2>Shri Shantadurga Temple, Kavlem, Goa</h2>
+										</header>
+									</article>
+									<article class="item">
+										<a href="live/mahalaxmi.html" class="image fit" target="_blank"><img src="images/mahalaxmi.jpg" alt="Shri Mahalaxmi" /></a>
+										<header>
+											<h2>Shri Mahalaxmi Temple, Bandoda, Goa</h2>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="live/navadurga.html" class="image fit" target="_blank"><img src="images/n.png" alt="Shri Navadurga" /></a>
+										<header>
+											<h2>Shri Navadurga Temple, Madkai, Goa</h2>
+										</header>
+									</article>
+									<article class="item">
+										<a href="live/manguesh.html" class="image fit" target="_blank"><img src="images/m.jpeg" alt="Shri Manguesh " /></a>
+										<header>
+											<h2>Shri Manguesh Temple, Mangueshi, Goa</h2>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
